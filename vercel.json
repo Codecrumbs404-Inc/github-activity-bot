@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/**/*",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/webhook",
+      "dest": "/api/webhook.js"
+    },
+    {
+      "src": "/weborg",
+      "dest": "/api/weborg.js"
+    }
+  ]
+}
